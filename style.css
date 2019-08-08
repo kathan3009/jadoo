@@ -1,0 +1,13 @@
+*
+{
+   margin: 0;
+   padding: 0;
+
+}
+.main
+{
+    float: left; 
+    margin: 500px;
+
+    background-color: blue;
+}
