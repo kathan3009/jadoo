@@ -7,29 +7,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
         <script type="text/javascript" src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+
     </head>
-    
-    <body >
+    <script>
+            $(document).ready(function(){
+     
+     $("a").on('click', function(event) {
+   
        
-       <!--tabs-->
-        <header class="tabs">
-            <div class="navbar">
-                <a href="pages/What.html"><i ></i> What is hello ?</a> 
-                <a href="pages/members.html"><i></i> Members</a> 
-                <a href="#" ><i ></i> Hello!</a> 
-                <a href="pages/about.html"><i ></i> About</a> 
-                <a href="pages/contact.html"><i ></i>Contact</a>
-              </div>
-              <section class="image">
+       if (this.hash !== "") {
+       
+         event.preventDefault();
+   
+         
+         var hash = this.hash;
+   
+   
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 900, function(){
+   
+           
+           window.location.hash = hash;
+         });
+       }
+     });
+   });
+           </script>
+    <body>
+       
+       
+        <header class="tabs" >
+            <div class="center">
+                 <div class="navbar" id="navTabs">
+                   <a href="#project"><i ></i>My Project</a> 
+                   <a href="#skill"><i></i>Skills</a> 
+                   <a href="#" ><i ></i>KATHAN</a> 
+                   <a href="pages/about.html"><i ></i> About</a> 
+                   <a href="pages/contact.html"><i ></i>Contact</a>
+                  </div> 
+            </div>
+         
+              <section >
                   <div class="logo">
-                <a href="#" ><i ></i> Innovate</a>
-                   </div>
+                     <a href="#what" ><i ></i> Innovate</a>
+                  </div>
               </section>
             </header>
          
-         <div class="main">
-               <p>UNDER CONSTRUCTION</p>
-         </div>
+       
+    <section class="write-up" id="project">
+        <div class="main">
+               <h1>My Projects</h1>
+               
+                  
+                </div>
+
+              
+    </section>   
+         
+             
+    <section class="write-up" id="skill">
+            <div class="main">
+                   <p>UNDER CONSTRUCTION</p>
+                   </div>
+        </section>        
+        <section class="write-up">
+            <div class="main">
+                   <p>UNDER CONSTRUCTION</p>
+                   </div>
+        </section>        
+        <section class="write-up">
+            <div class="main">
+                   <p>UNDER CONSTRUCTION</p>
+                   </div>
+        </section>   
+
         
      
 
